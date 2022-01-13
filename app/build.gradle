@@ -9,7 +9,7 @@ plugins {
 android {
     compileSdk 32
 
-    dataBinding{
+    dataBinding {
         enabled = true
     }
 

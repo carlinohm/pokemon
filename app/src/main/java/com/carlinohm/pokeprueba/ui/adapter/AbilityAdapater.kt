@@ -4,10 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.carlinohm.pokeprueba.R
-import com.carlinohm.pokeprueba.db.entity.Pokemon
 import com.carlinohm.pokeprueba.network.data.AbilityListResponse
 import com.carlinohm.pokeprueba.ui.vh.AbilityVH
-import com.carlinohm.pokeprueba.ui.vh.PokemonVH
 
 class AbilityAdapater(
     var list: List<AbilityListResponse>

@@ -6,15 +6,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.carlinohm.pokeprueba.R
 import com.carlinohm.pokeprueba.db.entity.Pokemon
 
-class PokemonVH(view: View): RecyclerView.ViewHolder(view) {
+class PokemonVH(view: View) : RecyclerView.ViewHolder(view) {
     val tvText = view.findViewById<TextView>(R.id.tvName)
 
-    fun bind(pokemon: Pokemon, selectPokemon: (Pokemon) -> Unit){
+    fun bind(pokemon: Pokemon, selectPokemon: (Pokemon) -> Unit) {
         var fav = ""
-        if (pokemon.fav == 1){
+        if (pokemon.fav == 1) {
             fav = "Favorito - "
         }
-        if (pokemon.fav == 2){
+        if (pokemon.fav == 2) {
             fav = "Error - "
         }
         tvText.text = "$fav${pokemon.name}"

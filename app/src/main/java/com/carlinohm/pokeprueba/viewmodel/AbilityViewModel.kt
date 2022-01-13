@@ -1,14 +1,11 @@
 package com.carlinohm.pokeprueba.viewmodel
 
-import androidx.lifecycle.*
-import com.carlinohm.pokeprueba.db.entity.Pokemon
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewModelScope
 import com.carlinohm.pokeprueba.network.data.AbilityListResponse
-import com.carlinohm.pokeprueba.network.data.EvolutionChainResponse
-import com.carlinohm.pokeprueba.network.data.PokemonSpeciesResponse
 import com.carlinohm.pokeprueba.repository.AbilityRepository
-import com.carlinohm.pokeprueba.repository.EvolutionChainRepository
-import com.carlinohm.pokeprueba.repository.PokemonRepository
-import com.carlinohm.pokeprueba.repository.PokemonSpeciesRepository
 import kotlinx.coroutines.launch
 
 class AbilityViewModel(private val abilityRepository: AbilityRepository) :

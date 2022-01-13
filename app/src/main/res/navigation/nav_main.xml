@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/pokemonsFragment"
         android:name="com.carlinohm.pokeprueba.ui.PokemonsFragment"
-        android:label="@string/pokemons_fragment" >
+        android:label="@string/pokemons_fragment">
         <action
             android:id="@+id/action_pokemonsFragment_to_pokemonInfoFragment"
             app:destination="@id/pokemonInfoFragment" />
@@ -15,7 +15,7 @@
     <fragment
         android:id="@+id/pokemonInfoFragment"
         android:name="com.carlinohm.pokeprueba.ui.PokemonInfoFragment"
-        android:label="@string/pokemon_info_fragment" >
+        android:label="@string/pokemon_info_fragment">
         <argument
             android:name="name"
             app:argType="string" />
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/abilitiesFragment"
         android:name="com.carlinohm.pokeprueba.ui.AbilitiesFragment"
-        android:label="@string/abilities_fragment" >
+        android:label="@string/abilities_fragment">
         <argument
             android:name="name"
             app:argType="string" />
@@ -37,7 +37,7 @@
     <fragment
         android:id="@+id/evoluitonChainFragment"
         android:name="com.carlinohm.pokeprueba.ui.EvoluitonChainFragment"
-        android:label="@string/evoluiton_chain_fragment" >
+        android:label="@string/evoluiton_chain_fragment">
         <argument
             android:name="url"
             app:argType="string" />

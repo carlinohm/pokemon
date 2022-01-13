@@ -6,7 +6,7 @@ import com.carlinohm.pokeprueba.repository.PokemonRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 
-class MyApp: Application() {
+class MyApp : Application() {
     val applicationScope = CoroutineScope(SupervisorJob())
 
     val database by lazy { AppDatabase.getDatabase(this) }

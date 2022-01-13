@@ -1,12 +1,12 @@
 package com.carlinohm.pokeprueba.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
@@ -17,8 +17,6 @@ import com.carlinohm.pokeprueba.MyApp
 import com.carlinohm.pokeprueba.R
 import com.carlinohm.pokeprueba.databinding.FragmentEvoluitonChainBinding
 import com.carlinohm.pokeprueba.db.entity.Pokemon
-import com.carlinohm.pokeprueba.repository.AbilityRepository
-import com.carlinohm.pokeprueba.repository.EvolutionChainRepository
 import com.carlinohm.pokeprueba.ui.adapter.PokemonAdapater
 import com.carlinohm.pokeprueba.viewmodel.PokemonViewModel
 import com.carlinohm.pokeprueba.viewmodel.PokemonViewModelFactory

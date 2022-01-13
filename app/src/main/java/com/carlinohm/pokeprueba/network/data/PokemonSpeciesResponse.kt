@@ -13,7 +13,7 @@ data class PokemonSpeciesResponse(
     val eggGroups: List<EggGroupResponse>,
     @SerializedName("evolution_chain")
     val evolutionChainUrl: EvolutionChainUrl
-){
+) {
     data class EvolutionChainUrl(
         @SerializedName("url")
         val url: String

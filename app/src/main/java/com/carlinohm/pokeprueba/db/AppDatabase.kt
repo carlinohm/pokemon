@@ -4,17 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.sqlite.db.SupportSQLiteDatabase
 import com.carlinohm.pokeprueba.db.dao.PokemonDao
 import com.carlinohm.pokeprueba.db.entity.Pokemon
-import com.carlinohm.pokeprueba.repository.PokemonRepository
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.launch
 
 @Database(entities = [Pokemon::class], version = 1)
-public abstract class AppDatabase : RoomDatabase(){
+public abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun pokemonDao():PokemonDao
+    abstract fun pokemonDao(): PokemonDao
 
     companion object {
         @Volatile

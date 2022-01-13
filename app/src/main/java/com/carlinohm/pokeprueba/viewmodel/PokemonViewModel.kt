@@ -3,8 +3,6 @@ package com.carlinohm.pokeprueba.viewmodel
 import android.os.CountDownTimer
 import androidx.lifecycle.*
 import com.carlinohm.pokeprueba.db.entity.Pokemon
-import com.carlinohm.pokeprueba.network.data.EvolutionChainResponse
-import com.carlinohm.pokeprueba.network.data.PokemonSpeciesResponse
 import com.carlinohm.pokeprueba.repository.PokemonRepository
 import kotlinx.coroutines.launch
 

@@ -14,10 +14,10 @@ interface PokemonClient {
     suspend fun getPokemons(@Query("limit") limit: Int): PokemonListResponse
 
     @GET("pokemon-species/{name}/")
-    suspend fun getSpeciesInfo(@Path("name") name: String) : PokemonSpeciesResponse
+    suspend fun getSpeciesInfo(@Path("name") name: String): PokemonSpeciesResponse
 
     @GET
-    suspend fun getEvolutionChain(@Url url: String) : EvolutionChainResponse
+    suspend fun getEvolutionChain(@Url url: String): EvolutionChainResponse
 
     @GET("pokemon/{name}")
     suspend fun getPokemon(@Path("name") name: String): PokemonResponse

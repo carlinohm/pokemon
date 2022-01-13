@@ -5,7 +5,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.carlinohm.pokeprueba.R
-import com.carlinohm.pokeprueba.db.entity.Pokemon
 import com.carlinohm.pokeprueba.network.data.AbilityListResponse
 
 class AbilityVH(view: View) : RecyclerView.ViewHolder(view) {
