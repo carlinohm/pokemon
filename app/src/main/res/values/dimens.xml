@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardview_default_margin">4dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="size_text_title">24sp</dimen>
+    <dimen name="size_text_default">16sp</dimen>
+</resources>

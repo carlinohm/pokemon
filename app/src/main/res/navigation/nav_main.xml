@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/pokemonsFragment">
+
+    <fragment
+        android:id="@+id/pokemonsFragment"
+        android:name="com.carlinohm.pokeprueba.ui.PokemonsFragment"
+        android:label="@string/pokemons_fragment" >
+        <action
+            android:id="@+id/action_pokemonsFragment_to_pokemonInfoFragment"
+            app:destination="@id/pokemonInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonInfoFragment"
+        android:name="com.carlinohm.pokeprueba.ui.PokemonInfoFragment"
+        android:label="@string/pokemon_info_fragment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pokemonInfoFragment_to_abilitiesFragment"
+            app:destination="@id/abilitiesFragment" />
+        <action
+            android:id="@+id/action_pokemonInfoFragment_to_evoluitonChainFragment"
+            app:destination="@id/evoluitonChainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/abilitiesFragment"
+        android:name="com.carlinohm.pokeprueba.ui.AbilitiesFragment"
+        android:label="@string/abilities_fragment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/evoluitonChainFragment"
+        android:name="com.carlinohm.pokeprueba.ui.EvoluitonChainFragment"
+        android:label="@string/evoluiton_chain_fragment" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_evoluitonChainFragment_to_pokemonsFragment"
+            app:destination="@id/pokemonsFragment" />
+    </fragment>
+</navigation>

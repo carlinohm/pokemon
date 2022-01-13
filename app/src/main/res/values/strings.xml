@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PokePrueba</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="base_happiness">Felicidad Base:</string>
+    <string name="capture_ratio">Ratio Captura</string>
+    <string name="egg_groups">Grupos huevo</string>
+    <string name="evolution_chain">Linea Evolutiva</string>
+    <string name="skills">Habilidades</string>
+    <string name="pokemons_fragment">POKEMONS</string>
+    <string name="pokemon_info_fragment">POKEMON</string>
+    <string name="abilities_fragment">HABILIDADES</string>
+    <string name="evoluiton_chain_fragment">LINEA EVOLUTIVA</string>
+</resources>
